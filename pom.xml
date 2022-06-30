@@ -14,12 +14,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
+        <latest.release.version>3.0.1</latest.release.version>
+        <spring.clount.alibaba>2.2.4.RELEASE</spring.clount.alibaba>
     </properties>
 
     <modules>
         <module>moton-fin-api</module>
         <module>moton-fin-dao</module>
         <module>moton-fin-manager</module>
+        <module>moton-fin-task</module>
         <module>moton-fin-service</module>
         <module>moton-fin-web</module>
         <module>start</module>
@@ -46,7 +49,13 @@
                 <version>2.1.4</version>
                 <type>jar</type>
             </dependency>
+            <dependency>
+                <groupId>org.apache.shardingsphere.elasticjob</groupId>
+                <artifactId>elasticjob-lite-core</artifactId>
+                <version>${latest.release.version}</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <build>

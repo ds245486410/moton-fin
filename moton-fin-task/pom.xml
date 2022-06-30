@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>moton-fin-service</artifactId>
+    <artifactId>moton-fin-task</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
@@ -32,9 +32,12 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.moton</groupId>
-            <artifactId>moton-fin-task</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.apache.shardingsphere.elasticjob</groupId>
+            <artifactId>elasticjob-lite-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
     </dependencies>
