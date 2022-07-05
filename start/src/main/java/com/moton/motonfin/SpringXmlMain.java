@@ -10,8 +10,8 @@ import org.springframework.core.io.ClassPathResource;
 public class SpringXmlMain {
     public static void main(String[] args) {
         XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("spring.xml"));
-        SimpleBean simpleBean = factory.getBean("simpleBean", SimpleBean.class);
-        System.out.println(simpleBean);
+        SimpleCar simpleCar = factory.getBean("simpleCar", SimpleCar.class);
+        System.out.println(simpleCar);
 
     }
 }
