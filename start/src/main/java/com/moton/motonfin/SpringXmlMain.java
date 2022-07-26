@@ -11,6 +11,7 @@ public class SpringXmlMain {
     public static void main(String[] args) {
         XmlBeanFactory factory = new XmlBeanFactory(new ClassPathResource("spring.xml"));
         SimpleCar simpleCar = factory.getBean("simpleCar", SimpleCar.class);
+        simpleCar.getSimpleInfo();
         System.out.println(simpleCar);
 
     }
