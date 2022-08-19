@@ -1,4 +1,4 @@
-package com.moton.motonfin.support;
+package com.moton.motonfin.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;

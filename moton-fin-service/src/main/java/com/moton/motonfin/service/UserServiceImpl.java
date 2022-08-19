@@ -8,6 +8,7 @@ import com.moton.motonfin.dao.dataobject.UserDO;
 import com.moton.motonfin.dao.mapper.UserMapper;
 import com.moton.motonfin.api.UserService;
 import com.moton.motonfin.api.model.UserModel;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author
@@ -20,6 +21,7 @@ public class UserServiceImpl implements UserService {
 
     private static final BeanCopier copier = BeanCopier.create(UserModel.class, UserDO.class, false);
 
+    @Transactional
     public String getUserName(Long id) {
         UserDO userDO = userMapper.getById(id);
         return userDO != null ? userDO.getName() : null;
